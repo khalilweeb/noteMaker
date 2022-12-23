@@ -1,0 +1,19 @@
+  body {
+    background-color: rgb(1, 1, 14);
+  }
+  
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+h1 {
+  width: 100%;
+  color: #ffff;
+  background-color: rgb(24, 24, 139);
+  padding: 10px 30px;
+}
+
+
