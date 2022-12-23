@@ -9,7 +9,7 @@
     box-sizing: border-box;
   }
 
-h1 {
+.app h1 {
   width: 100%;
   color: #ffff;
   background-color: rgb(24, 24, 139);

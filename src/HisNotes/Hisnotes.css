@@ -1,0 +1,22 @@
+.hisnote {
+    color: white;
+    margin-left: 20px;
+    border: 2px solid rgb(94, 81, 81);
+    width: 300px;
+    padding: 20px;
+    background-color: rgb(2, 2, 2);
+    border-radius: 5px;
+}
+
+.hisnote  button {
+    color: #fff;
+    background-color: rgb(14, 14, 56);
+    border-radius: 50%;
+    padding: 10px;
+    position: relative;
+    font-size: 20px;
+    float: right;
+    margin-bottom: 10px;
+
+
+}
