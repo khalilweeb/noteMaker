@@ -9,9 +9,9 @@ const Hisnote = props => {
 
         return (
             <div className="hisnote">
-                <h1>{props.title}</h1>
+                <h2>{props.title}</h2>
                 <p>{props.note}</p>
-                <button>X</button>
+                <button>CLOSE</button>
             </div>
 
         )

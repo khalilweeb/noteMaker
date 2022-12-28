@@ -9,10 +9,10 @@
     box-sizing: border-box;
   }
 
-.app h1 {
+.App h1 {
   width: 100%;
   color: #ffff;
-  background-color: rgb(24, 24, 139);
+  background-color: rgb(20, 20, 145);
   padding: 10px 30px;
 }
 
