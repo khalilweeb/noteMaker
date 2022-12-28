@@ -10,7 +10,7 @@ const Hisnote = props => {
         return (
             <div className="hisnote">
                 <h2>{props.title}</h2>
-                <p>{props.note}</p>
+                <p>{props.content}</p>
                 <button>CLOSE</button>
             </div>
 

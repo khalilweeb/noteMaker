@@ -7,26 +7,38 @@ class  App extends Component {
 
 
   state = {
-    notes: [
-      {title: 'hello' , note: 'm tryinngggg'}
-    ]
+    notes: []
+  }
+
+  addNote = (note) => {
+ 
+      let old = this.state.notes;
+      this.setState({
+        notes: [...old, note]
+      })
+   
   }
 
 
 
-
-  onclickhandler = () => {
-
-      
-  }
 
 
   render () {
+    const allNotes =  (
+      <div style={{display:'flex'}}>
+        {this.state.notes.map((note ,index ) => {
+  
+          return <Hisnote  title={note.title} content={note.content} key={index} />
+  
+        })}
+      </div>
+    )
     return (
       <div className="App">
         <h1>Notes</h1>
-        <Note click={this.onclickhandler}/>
-        <Hisnote title={this.state.notes[0].title}  note={this.state.notes[0].note} />
+        <Note onAdd={this.addNote}/>
+        <Hisnote  title='{note.title}' content='ehehhee'  />
+        {allNotes}
       </div>
     );
   }
