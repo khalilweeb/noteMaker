@@ -1,18 +1,20 @@
 .hisnote {
-    color: white;
+  
     margin-left: 20px;
     border: 2px solid rgb(94, 81, 81);
-    width: 300px;
+    min-width: 300px;
+    max-width: 300px;
     padding: 20px;
     background-color: rgb(2, 2, 2);
     border-radius: 5px;
-    
+    flex-wrap: wrap;
+    color: rgb(206, 175, 175);
 }
 
 .hisnote  button {
     color: #fff;
-    background-color: rgb(14, 14, 56);
-    border-radius: 50%;
+    background-color: rgb(91, 91, 255);
+    
     padding: 10px;
     position: relative;
     font-size: 20px;

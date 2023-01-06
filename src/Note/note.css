@@ -1,5 +1,5 @@
 .note h2 ,h3 {
-    color: #fff;
+    color: rgb(15, 13, 13);
 }
 
 .note {
@@ -18,7 +18,7 @@
     font-size: 20px;
     outline: none;
     background-color: transparent;
-    color: white;
+   
 }
 
 .note button {

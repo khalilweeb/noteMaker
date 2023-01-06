@@ -11,13 +11,22 @@ class  App extends Component {
   }
 
   addNote = (note) => {
- 
       let old = this.state.notes;
       this.setState({
         notes: [...old, note]
       })
    
   }
+
+deleteHandler = (noteIndex) => {
+
+  const notes = [...this.state.notes];
+  notes.splice(noteIndex, 1);
+  this.setState({notes: notes})
+}
+
+ 
+
 
 
 
@@ -28,7 +37,7 @@ class  App extends Component {
       <div style={{display:'flex'}}>
         {this.state.notes.map((note ,index ) => {
   
-          return <Hisnote  title={note.title} content={note.content} key={index} />
+          return <Hisnote  title={note.title} content={note.content} key={index} delete={()=> (this.deleteHandler(index))} />
   
         })}
       </div>
@@ -37,7 +46,6 @@ class  App extends Component {
       <div className="App">
         <h1>Notes</h1>
         <Note onAdd={this.addNote}/>
-        <Hisnote  title='{note.title}' content='ehehhee'  />
         {allNotes}
       </div>
     );

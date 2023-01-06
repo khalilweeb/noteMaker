@@ -27,7 +27,7 @@ const eventChangeHandler = (event) => {
 }
 
 const onSubmit = (event) => {
-    props.onAdd(note);
+    props.onAdd(note);//sending the note state with props
     setNote({
         title: '',
         content : ''

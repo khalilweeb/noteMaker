@@ -11,7 +11,7 @@ const Hisnote = props => {
             <div className="hisnote">
                 <h2>{props.title}</h2>
                 <p>{props.content}</p>
-                <button>CLOSE</button>
+                <button onClick={props.delete} >CLOSE</button>
             </div>
 
         )
